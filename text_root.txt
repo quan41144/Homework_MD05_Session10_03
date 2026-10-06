@@ -1,0 +1,8 @@
+1. Tạo khóa SSH
+ssh-keygen -t ed25519 -f deploy_key -C "deploy_user"
+2. sao chép public key
+type deploy_key.pub
+3. Cấu hinhg VPS
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys
